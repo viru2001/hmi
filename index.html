@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Feedback</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <header>
+      <h1 class="pageTitle">Feeadback</h1>
+    </header>
+    <main>
+      <div class="card-layout layout-medium">
+        <div class="content">
+          <div class="close-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              class="bi bi-x"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </div>
+
+          <h1 class="title">Give feedback</h1>
+          <p>How was your experience ?</p>
+
+          <div class="emojis">
+            <span class="eachEmoji">😥</span>
+            <span class="eachEmoji">😔</span>
+            <span class="eachEmoji">😐</span>
+            <span class="eachEmoji">😀</span>
+            <span class="eachEmoji">😇</span>
+          </div>
+
+          <h3>Do you have any thoughts you’d like to share?</h3>
+          <textarea name="users-feedback" id="users-feedback"></textarea>
+          <h3>Your Name</h3>
+          <input class="user-input" placeholder="John Doe" />
+          <h3>Your Email</h3>
+          <input class="user-input" placeholder="abc@gmail.com" />
+
+          <h3>May we follow you up on your feedback?</h3>
+
+          <div class="follow-up-options">
+            <label class="button">
+              <input type="radio" name="follow-up" id="follow-up-yes" checked />
+              <span class="radio-circle"></span>
+              Yes
+            </label>
+            <label class="button">
+              <input type="radio" name="follow-up" id="follow-up-no" />
+              <span class="radio-circle"></span>
+              No
+            </label>
+          </div>
+
+          <div class="user-actions">
+            <button class="btn-primary">Send</button>
+
+            <button class="btn-outline">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- partial -->
+    <script src="./script.js"></script>
+  </body>
+</html>
