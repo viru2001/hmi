@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New PIN </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel='icon' href='./pics/boi.png'>
+    <script src="script.js"></script>
+    <script src="jquery.js"></script>
+</head>
+
+<body>
+    <div class="screen">
+        <img src="./pics/boi.png" alt="" class="logo1">
+        <div class="keys">
+            <table colspan="3">
+                <td>
+                    <tr><button onclick="fun(7)">7</button></tr>
+                    <tr><button onclick="fun(8)">8</button></tr>
+                    <tr><button onclick="fun(9)">9</button></tr>
+                </td> <br>
+                <td>
+                    <tr><button onclick="fun(7)">4</button></tr>
+                    <tr><button onclick="fun(5)">5</button></tr>
+                    <tr><button onclick="fun(6)">6</button></tr>
+                </td><br>
+                <td>
+                    <tr><button onclick="fun(1)">1</button></tr>
+                    <tr><button onclick="fun(2)">2</button></tr>
+                    <tr><button onclick="fun(3)">3</button></tr>
+                </td><br>
+                <td>
+                    <tr><button onclick="cl()"
+                            style="background-color: rgb(255, 70, 70); color: white; font-size: 20px;">X</button s></tr>
+                    <tr><button onclick="fun(0)">0</button></tr>
+                    <tr><button onclick="okay()"
+                            style="background-color: rgb(46, 236, 46); color: white; font-size: 20px;">OK</button s>
+                    </tr>
+                </td>
+            </table>
+        </div>
+        <div class="pin">
+            <p>Enter your new 4 digit PIN: </p>
+        </div>
+        <div id="pin"></div>
+        <div class="pop-up">
+            <a href="" id="close">&times;</a>
+            <p id="message"></p>
+        </div>
+    </div>
+</body>
+
+</html>
